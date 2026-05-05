@@ -882,3 +882,156 @@ color: #4a5568;
 .fa-chevron-left, .fa-chevron-right {
     color: rgb(100, 21, 255);;
 }
+
+/* This is the css code for the last part of the main webpage  */
+
+
+.start__container {
+  background-color: rgb(100, 21, 255);
+  padding: 100px 80px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.start__row {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 32px;
+}
+
+
+.start__title {
+  color: #f7fafc;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  max-width: 480px; /
+}
+
+
+.start__buttons {
+  display: flex;
+  gap: 16px;
+}
+
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: none;
+}
+
+
+.btn-primary {
+  background-color: #f56565;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e55353;
+}
+
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid white; 
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* this is the css for the footer section of the webpage  */
+
+.footer__wrapper {
+    background-color: rgb(100, 21, 255);
+    margin-bottom: -32px;
+    position: relative;
+    padding: 96px 32px;
+    overflow: hidden;
+}
+
+.footer__text--sections {
+  margin-top: -48px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: #7c8ba1 1px solid;
+}
+
+
+
+.footer__text--section{
+    
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+    margin-bottom: 64px;
+
+}
+
+.footer__text--section-title{
+    font-weight: 700;
+    color: #f7fafc;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.footer__text--item{
+    color: #f7fafc;
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer__text--item:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo--text {
+    font-size: 20px;
+    color: rgb(247, 250, 252);
+    font-weight: 900;
+    margin-left: 8px;
+    letter-spacing: 0.05em;
+}
+
+.footer__logo--img
+ {
+    height: 32px;
+    width: 32px;
+}
+
+.footer__copyright
+ {
+    color: rgb(203, 213, 224);
+    font-weight: 500;
+}
