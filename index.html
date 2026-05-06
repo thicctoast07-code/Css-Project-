@@ -6,7 +6,7 @@
     <title>Css Project</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <script src="index.js"></script>
 </head>
 <body>
     <section class="landing__page">
@@ -26,8 +26,26 @@
                 <a href="#" class="nav__link"><span class="nav__link--special">Sign Up</span></a>
         
             </div>
-            </div>
+            
+
+<button class="btn__menu" onclick="openMenu()">
+  <i class="fa-solid fa-bars"></i>
+</button>
+<div class="menu__backdrop">
+<button class="btn__menu btn__menu--close" onclick="closeMenu()">
+  <i class="fas fa-times"></i>
+</button>
+<ul class="menu__links">
+  <li class="menu__list"><a href="#landing__page" Class="menu__link" onclick="closeMenu()">About</a></li>
+  <li class="menu__list"><a href="#features" class="menu__link" onclick="closeMenu()">Blog</a></li>
+  <li class="menu__list"><a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a></li>
+  <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Contact us</a></li>
+  <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Login</a></li>
+  <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()"><span class="menu__link--special">Sign Up</span></a></li>
+</ul>
+
 </div>
+
         </nav>
         <header>
             <div class="container">

@@ -6,6 +6,11 @@
     color: #243e63;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .row{
     width: 100%;
     max-width: 1200px;
@@ -106,7 +111,83 @@ a:hover{
     border: none;
     width: auto;}
 
-/* Header and rest of the landing page */
+.btn__menu{
+    background-color: transparent;
+    font-size: 24px;
+    text-align: center;
+    border: none; 
+    display: none;
+    padding: 16px;
+}
+
+.btn__menu:hover{
+    color: #6415ff;
+}
+
+.menu__backdrop{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu--open .menu__backdrop{
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu__links{
+display: flex;
+flex-direction: column;
+align-items: center;
+list-style: none;
+gap: 28px;
+}
+
+.menu__list{
+    padding: px 0;
+    text-decoration: none;
+}
+
+.menu__link{
+    color: #1a202c;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu__link:hover{
+    text-decoration: none;
+}
+
+.btn__menu--close{
+    position: absolute;
+    top: 24px;
+    right: 18px;
+    padding: 8px;
+    color: white
+}
+
+.menu__link--special{
+    color: #f7fafc;
+    padding: 12px 32px;
+    background: #6415ff;
+    border-radius: 500px;
+    border: none;
+}
+
+    /* Header and rest of the landing page */
 
 .header__description{
     width: 40%;
@@ -1034,4 +1115,148 @@ color: #4a5568;
  {
     color: rgb(203, 213, 224);
     font-weight: 500;
+}
+
+
+/* FEATURES — responsive fix */
+@media (max-width: 768px) {
+  .feature__grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px;
+  }
+
+  .feature {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* PRICING — responsive fix */
+@media (max-width: 900px) {
+  .pricing__options--wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .pricing__option {
+    margin-right: 0;
+    width: 100%;
+    max-width: 380px;
+  }
+}
+
+
+/* CTA BANNER — responsive fix */
+@media (max-width: 768px) {
+  .start__row {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .start__buttons {
+    justify-content: center;
+  }
+}
+
+
+/* FOOTER — responsive fix */
+@media (max-width: 900px) {
+  .footer__text--sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__text--sections {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+    .nav__links {
+        display: none;
+    }
+    .btn__menu{
+        display: block;
+    }
+}
+
+@media (max-width: 768px){
+.row{
+    max-width: 100%;
+    width: 100%;
+    padding: 0 16px;
+}
+.header__description{
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+   
+    }
+
+}
+
+@media (max-width: 768px){
+    .Quailty{
+        display: flex;
+        flex-direction: column;
+    }
+    .Quailty__text{
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 32px;
+    }
+    .Quailty__img--wrapper{
+        padding-left: 32px;
+        padding-top: 16px;
+        width: 100%
+    }
+
+    .get__started{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .get__started--text{
+        width:100%
+    }
+    .get__started--img-wrapper{
+        width: 100%
+    }
+
+    .Values{
+        display: flex;
+        flex-direction: column;
+        padding-left: 32px;
+    }
+    .values__img--wrapper{
+        width: 100%;
+        padding-top: 16px;
+    }
+    .values__text{
+        width:100%
+    }
+
+    .testimonial{
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial__text{
+        width:100%
+    }
 }
