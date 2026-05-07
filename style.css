@@ -939,9 +939,8 @@ color: #4a5568;
 
 .testimonial__feature{
     display: flex;
-   justify-content: space-between;
-   align-items: center;
 }
+
 
 .testimonial__buttons
  {
